@@ -1,0 +1,601 @@
+
+html {
+    overflow-x: hidden;
+}
+
+body{
+    margin:0;
+    overflow-x: hidden;
+}
+
+#top{
+    width:1835px;
+    aspect-ratio: 1/0.5;
+    margin-bottom: 20px;
+    border-radius: 37.5% 0 37.5% 0%;
+    border: 20px solid rgb(4,5,8);
+    border-top: none;
+    border-left: none;
+    z-index: -5;
+    border-color:#3f4e87;
+}
+
+.caroussel{
+    position : absolute;
+    z-index: -3;
+    width: 100%;
+    aspect-ratio: 1/0.5;
+    overflow: hidden;
+    border-radius: 37.5% 0 37.5% 0%;
+}
+
+.slide {
+    position:absolute;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+#couv image{
+    width: 1850px;
+}
+
+
+/* CLASSEMENT */
+
+#classement_complet h2{
+    margin-left: 18%;
+    padding-top: 15px;
+    width: 80%;
+    color : #06187a;
+    font-family: Courier New, monospace;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#classement_complet table{
+    border-spacing: 0px 8px;
+    font-family:'Open Sans';
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#classement_complet table td{
+    font-size: 22px;
+    background-color: #fff;
+}
+
+#classement_complet table img{
+    width: 65px;
+    margin-right: 10px;
+}
+
+#classement_complet table #ligne_samonein td{
+    background-color: #336baa;
+}
+
+.col_nom{
+    display: flex;
+    align-items: center;
+}
+
+.col_chiffre{
+    text-align: center;
+}
+
+.l .col_chiffre{
+    width:10%;
+}
+
+.l .col_nom{
+    width: 320px;
+}
+
+.m .col_chiffre{
+    width:50px;
+}
+
+.m .col_nom{
+    width: 280px;
+}
+
+#classement_complet tr td:first-child{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#classement_complet tr td:last-child{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#fond_classement{
+
+    position: absolute;
+    z-index: -1;
+    background-color: #e9eff5;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 25px;
+}
+
+.taille_seniors{
+    height:2050px;
+}
+
+.taille_juniors, .taille_cadets{
+    height: 700px;
+}
+
+.taille_cal_juniors, .taille_cal_cadets{
+    min-height: 850px;
+}
+/* CALENDRIER */
+
+.rencontre{
+    border: solid 1px  #336baa;
+    border-radius: 10px 10px 10px 10px;
+    width: 65%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    font-family: 'Open Sans';
+    overflow: hidden;
+
+    background-color: #fff;
+}
+
+.note{
+    font-size: 17px;
+}
+
+.indisponible{
+    text-align: center;
+    font-size: 17px;
+    color: #06187a;
+    font-weight: bold;
+}
+
+.premiere{
+    margin-bottom: 10px;
+}
+
+.reserve{
+    margin-bottom: 50px;
+}
+
+.jeune{
+    margin-bottom: 50px;
+}
+
+.info_rencontre{
+    border-radius: 10px 0px 0px 10px;
+    position: relative;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.l .info_rencontre{
+    width: 20%;
+}
+
+.m .info_rencontre{
+    width: 30%;
+}
+
+.info_rencontre p{
+    width: 80%;
+    text-align: center;
+}
+
+.info_rencontre::after{
+    content: "";
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-color: #336baa;
+    position: absolute;
+    top:0;
+    left:-12%;
+    z-index: -1;
+}
+
+.premiere .info_rencontre::after{
+    transform:skew(-18deg, 0deg);
+}
+
+.reserve .info_rencontre::after{
+    transform:skew(18deg, 0deg);
+}
+
+.jeune .info_rencontre::after{
+    transform:skew(-18deg, 0deg);
+}
+
+.match{
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.l .match{
+    width : 75%;
+}
+
+.m .match{
+    width : 65%;
+}
+
+.match img{
+    width: 65px;
+}
+
+.resultat{
+    width: 7em;
+    text-align: center;
+}
+
+.m .resultat{
+    width: 15em;
+}
+
+.nom_equipe_g{
+    width: 20em;
+    text-align: right;
+    padding-right: 2%;
+}
+
+
+.nom_equipe_d{
+    width: 20em;
+    text-align: left;
+    padding-left: 2%;
+}
+
+/* ACTU */
+.div_actu{
+    margin-top: 30px;
+    height: 1350px;
+}
+
+.div_actu_m{
+    margin-top: 30px;
+    height: 1150px;
+}
+
+.div_actu h2, .div_actu_m h2{
+
+    font-weight: bold;
+    font-family: 'Open Sans';
+    font-size: 35px;
+    color: #06187a;
+    text-align: center;
+    margin-bottom: 40px ;
+}
+
+.grille_actu{
+    display: grid;
+    justify-content: space-around;
+}
+
+.l .grille_actu{
+    grid-template-columns: 20% 20% 20% 20%;
+}
+
+.m .grille_actu{
+    grid-template-columns: 30% 30% 30%;
+}
+
+.grille_actu a{
+    text-decoration: none;
+}
+
+.actu{
+    margin-bottom: 30px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    overflow: hidden;
+    border:1px solid #142681;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.m .actu{
+
+    height:480px;
+}
+
+.l .actu{
+    height:600px;
+}
+
+
+.imgActu{
+    margin-top:-10%;
+    border-radius: 10% 10% 10% 10%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform:skew(0deg, 8deg);
+    overflow: hidden;
+
+    border: 1px solid #142681;
+}
+
+.imgActu img{
+    transform:skew(0deg, -8deg);
+    min-height: 100%;
+    max-height: 200%;
+    min-width: 100%;
+    max-width: 155%;
+}
+
+
+.m .imgActu{
+    height:200px;
+}
+
+.l .imgActu{
+    height:250px;
+}
+
+.titre_actu{
+    font-weight: bold;
+    font-style: 'Open Sans';
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    color: #171f6b;
+}
+
+.actuDate{
+    margin-top: 25px;
+    width: 100%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+.text_actu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+
+
+.l .text_actu{
+    height:350px;
+}
+
+.m .text_actu{
+    height:250px;
+}
+
+
+.apercu_actu{
+    margin-bottom: auto;
+    margin-left: 10%;
+}
+
+.suite::before{
+    content: "➔";
+    font-size: 24px;
+    font-weight: bold;
+    color: #830707;
+}
+
+.suite{
+    font-size: 24px;
+    font-weight: bold;
+    color: #171f6b;
+    width: 100%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+.voir_plus{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #3f4e87;
+    font-size: 24px;
+    border-radius: 5% / 50%;
+    width: 15%;
+    margin-bottom: 15px;
+    font-family: 'Open Sans';
+}
+
+.m .voir_plus{
+    width: 30%;
+}
+
+.link{
+    text-decoration: none;
+    color: #000;
+}
+
+.voir_plus:hover{
+    background-color: #0d3d74;
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
+/* VIEWACTUALITES */
+#actu_complet{
+    height: 1445px;
+}
+
+#actu_complet_m{
+    height: 1000px;
+}
+
+.corps_actu{
+    padding-top: 25px;
+}
+
+.corps_actu .contenu_actu{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    font-family: 'Open Sans';
+}
+
+.corps_actu a{
+    color:#000;
+    text-decoration: none;
+}
+
+.corps_actu a p{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    font-family: 'Open Sans';
+    font-weight: 550;
+    text-align: center;
+    width: 230px;
+    height: 35px;
+    font-size: 20px;
+    padding-top: 5px;
+
+    border: 1px solid #06187a;
+    border-radius: 5% / 50%;
+}
+
+.corps_actu h1{
+    text-align: center;
+    font-family: 'Open Sans';
+    color:#06187a;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.date{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: 12%;
+    text-align: left;
+    font-size: 12px;
+}
+
+.contenu_actu{
+    text-indent: 35px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    text-align: justify;
+    text-justify: auto;
+}
+
+.photo_actu{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.photo_article{
+    max-width: 25%;
+    height: 100%;
+    max-height: 500px;
+}
+
+.img_titre{
+    max-height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 1px 0px 19px -3px rgba(0,0,0,0.87);
+    border-radius: 1%;
+}
+
+.divImgTitre{
+    display: flex;
+    align-items: center;
+}
+
+
+#fond_actu{
+
+    position: absolute;
+    z-index: -1;
+    background-color: #e9eff5;
+    width:80%;
+    height: 1445px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 25px;
+}
+
+.m #fond_actu{
+    height: 1000px;
+}
+
+/* GALLERIE */
+.gallerie{
+    width: 97%;
+    grid-template-rows: repeat(200px);
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+}
+
+.saison_titre{
+    text-align: center;
+    font-family: 'Open Sans';
+    width: 100%;
+}
+
+.img_apercu{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.slider_img{
+    display:flex;
+    width:100%;
+    background-color: #000;
+}
+
+.img_middle{
+    display: inline;
+    vertical-align: middle;
+}
+
+
+.fleche{
+    color: #fff;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.img_slider{
+    max-height: 1000px;
+    max-width: 100%;
+    height: auto;
+}
+
+.croix{
+    position:absolute;
+    width: 5%;
+    height: 5%;
+    color: #fff;
+    right:0%;
+    margin-top:2%;
+}

@@ -1,0 +1,700 @@
+
+@import url('https://fonts.cdnfonts.com/css/archivo-black');
+@import url('https://fonts.cdnfonts.com/css/homemade-apple');       
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    height:4000px;
+    margin:0;
+    overflow-x: clip;
+}
+
+#top{
+    width:1859px;
+    aspect-ratio: 1/0.5;
+    margin-bottom: 20px;
+    border-radius: 37.5% 0 37.5% 0%;
+    border: 20px solid rgb(4,5,8);
+    border-top: none;
+    border-left: none;
+    z-index: -5;
+    border-color:#3f4e87;   
+}
+
+.onglet_titre{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.caroussel{
+    position : absolute;
+    width: 100%;
+    aspect-ratio: 1/0.5;
+    overflow: hidden;
+    border-radius: 37.5% 0 37.5% 0%;
+}
+
+.caroussel img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: 1;
+}
+
+footer{
+    background-color: #495bb6;
+    text-align: center;
+    width:100%;
+}
+ 
+.slide {
+  position:absolute;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Mise en forme div calendrier et classement*/
+
+#fond_classement{
+    width: 100%;
+    position: absolute;
+    z-index: -3;
+    max-height: 2000px;
+}
+
+.calendrier_classement{
+    position: absolute;
+    z-index: 1;
+    margin-top: 220px;
+    margin-left: 10%;
+    width: 80%;
+    height: 1750px;
+    background-color: #eaecf0;
+    border-radius: 3%;
+    background:linear-gradient(#eaecf0, #ffffff);
+}
+
+.m .calendrier_classement{
+
+    margin-top: 220px;
+    margin-left: 10%;
+    width: 80%;
+    height: 1200px;
+    background-color: #eaecf0;
+    border-radius: 3%;
+    background:linear-gradient(#dbdde0, #ffffff);
+}
+
+.titre_classement{
+    display: flex;
+    justify-content: space-around;
+    color : rgb(6, 24, 122);
+    font-family: Courier New, monospace;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#classement{
+    height: 2000px;
+}
+
+#last_text{
+    margin-bottom: 0px;
+}
+
+.div_bouton{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*Mise en forme du tableaux avec le classement*/
+#div_classement{
+    height: 100%;
+}
+
+.logo_classement{
+    width: 50px;
+}
+
+#classement_acc th{
+    font-size: 10px;
+    font-weight: normal;
+    text-align:left;
+    padding-left: 30px;
+}
+
+#classement_acc{
+    margin-left: 5%;
+    width: 95%;
+    height: 40%;
+    border-collapse: unset;
+    border-spacing: 0px 8px;
+    font-family: 'Open Sans';
+}
+
+.m #classement_acc{
+    padding-right: 5%;
+}
+
+#classement_acc .ligne_class_acc{
+    font-size: 22px;
+    overflow: hidden;
+   
+}
+
+.ligne_class_acc td:first-child{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.ligne_class_acc td:last-child{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ligne_class_acc:last-child td{
+    background:linear-gradient(#ffffff, #ffffff03);
+    
+}
+
+/*.ligne_class_acc:nth-child(2) td{
+    background:linear-gradient(#ffffff03, #ffffff); 
+}*/
+
+
+
+.ligne_class_acc td{
+    background-color: #ffffff; 
+   
+}
+
+#sam_classement td{
+    background-color: #336baa;
+    /*filter:brightness(2);*/
+}
+
+.petite_col{
+    width: 15%;
+    text-align: center;
+}
+
+tbody tr, tbody td{
+    box-sizing: border-box;
+}
+
+.large_col{
+    width: 100%;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.classement_content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 360px;
+}
+
+.m .classement_content{
+    display: block;
+}
+
+.nom_classement{
+    margin-left: 5%;
+}
+
+.bouton_complet{
+    font-size: 24px;
+    border-radius: 5% / 50%;
+    border: 1px solid #142681;
+    width: 350px;
+    height:1.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+}
+
+.div_calendrier .bouton_complet{
+    margin-top: 50px;
+}
+
+/*Mise en forme des affiches du calendrier*/
+.div_calendrier{
+    height: 100%;
+}
+
+.just_calendrier{
+    margin-top: 50px;
+}
+
+.match{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.calendrier{
+    margin-left: 8%;
+    width: 85%;
+    height: 95%;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color:#142681;
+    font-family: 'Open Sans';
+    display: flex;
+    align-items: center;
+}
+
+.cote_calendrier{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    background-color: #ffffff;
+    cursor:pointer;
+}
+
+.just_calendrier .cote_calendrier{
+
+    height: 220px;
+}
+
+#fleche_calendrier_gauche{
+    border-radius: 15% 0% 0% 15%;
+    box-shadow: inset -50px 0px 22px -30px rgba(0,0,0,0.11);
+}
+
+#fleche_calendrier_droite{
+    border-radius: 0% 15% 15% 0%;
+    box-shadow: inset 50px 0px 22px -30px rgba(0,0,0,0.11);
+}
+
+.affiche{
+    background: url("/img/fondcalendrier.png") no-repeat center center;
+    background-size: 110% 112%;
+    z-index: 1;
+    height: 350px;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.logo_calendrier{
+    width: 90px;
+}
+
+.img_button{
+    width: 50%;
+    height: 20%;
+}
+
+.logo_ligue{
+    margin-top: 10px;
+    width: 165px;
+}
+
+.score_calendrier{
+    color:#000;
+}
+
+.date_fleche{
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight:normal;
+    color:#000000;
+    font-family: 'Open Sans';
+    border-radius: 10% / 50%;
+    border: 1px solid #142681;
+}
+
+.entete_calendrier .date_fleche{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Mise en forme des actualités*/
+.actualite{
+    width: 100%;
+    position:absolute;
+    z-index: 2;
+    margin-top: 880px;
+}
+
+.m .actualite{
+    margin-top: 1400px;
+}
+
+.titre_actualite{
+    font-weight: bold;
+    font-style: 'Open Sans';
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.titre_actualite hr{
+    position : absolute;
+    z-index: 3;
+    color:#000;
+    width: 25%;
+    height: 1px;
+    background-color: #000;
+}
+
+.titre_actualite #hr_gauche_actu{
+    margin-left: 15%;
+}
+
+.m .titre_actualite #hr_gauche_actu{
+    margin-left: 5%;
+    width: 30%;
+}
+
+.m .titre_actualite #hr_droite_actu{
+    margin-left: 65%;
+    width: 30%;
+}
+
+.titre_actualite #hr_droite_actu{
+    margin-left: 60%;
+}
+
+.actu_content{
+    display: flex;
+    justify-content: center;
+}
+
+.actu_haute{
+    font-family: 'Open Sans';
+    border-radius: 10%;
+    width: 18%;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border:1px solid #142681;
+    overflow: hidden;
+
+    background-color: #fff;
+}
+
+.m .actu_haute, .m .actu_basse{
+
+    height:300px;
+}
+
+.l .actu_haute, .l .actu_basse{
+    height:600px;
+}
+
+.actu_basse{
+    font-family: 'Open Sans';
+    border-radius: 10%;
+    width: 18%;
+    margin-top: 200px;
+    margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+    border:1px solid #142681;
+    background-color: #fff;
+}
+
+.imgActu{
+    margin-top:-10%;
+    border-radius: 10% 10% 10% 10%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform:skew(0deg, 8deg);
+    overflow: hidden;
+
+    border: 1px solid #142681;
+}
+
+.imgActu img{
+    transform:skew(0deg, -8deg);
+    min-height: 100%;
+    max-height: 200%;
+    min-width: 100%;
+    max-width: 155%;
+}
+
+.m .imgActu{
+    height:105px;
+}
+
+.l .imgActu{
+    height:250px;
+}
+
+.m .actu_basse{
+    margin-top: 100px;
+}
+
+.actuApercu{
+    height:350px;
+}
+
+.actuDate{
+    margin-top: 25px;
+    width: 100%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+.titre_actu{
+    font-weight: bold;
+    font-style: 'Open Sans';
+    font-size: 20px;
+    color: #171f6b;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.text_actu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    border-radius: 0% 0% 10% 10%;
+    border-top: 0px;
+    margin-top: 0px;
+}
+
+.l .text_actu{
+    height: 350px;
+}
+
+.m .text_actu{
+    height: 180px;
+    font-size: 17px;
+}
+
+.apercu_actu{
+    margin-bottom: auto;
+    margin-left: 10%;
+}
+
+.suite::before{
+    content: "➔";
+    font-weight: bold;
+    color: #830707;
+}
+
+.suite{
+    font-weight: bold;
+    color: #171f6b;
+    width: 100%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+.l .suite{
+    font-size: 24px;
+}
+
+.m .suite{
+    font-size: 18px;
+}
+
+.l .suite::after{
+    font-size: 24px;
+}
+
+.m .suite::after{
+    font-size: 18px;
+}
+
+/*Mise en forme de photos*/
+#photos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    background-image: url("/img/bandephoto.png");
+    width: 100%;
+    height: 260px;
+}
+
+.div_photo{
+    margin-top: 15px;
+    height:230px;
+    width: 230px;
+}
+
+.figure_lien_photo{
+    height:230px;
+    width: 230px;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+.lien_photo{
+    position: absolute;
+    z-index: 2;
+    width: 230px;
+    height: 130px;
+    background-color: #171f6be0;
+    text-align: center;
+    padding-top: 100px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+#photos img{
+    position: absolute;
+    height:230px;
+    width: 230px;
+    object-fit: cover;
+}
+
+/*Mise en forme reseaux sociaux*/
+#socialmedia{
+    align-items: center;
+    margin-top: 60px;
+}
+
+#back_social_m{
+    position: absolute;
+    z-index: -2;
+    background-color: #e9eff5;
+    width:80%;
+    height: 700px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    border-radius: 25px;
+    background-position: 225px 0px;
+}
+
+#back_social{
+    position: absolute;
+    z-index: -2;
+    background-color: #e9eff5;
+    width:80%;
+    height: 1150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 200px;
+    border-radius: 25px;
+    background-position: 225px 0px;
+}
+
+#img_reseau{
+    display: block;
+}
+
+.ticket_reseau{
+    position:relative;
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_titre_social{
+    position: absolute;
+    z-index: 2;
+    margin-left: 45%;
+    margin-top: 200px;
+    height: 100px;
+}
+
+.logo_titre_social_m{
+    position: absolute;
+    z-index: 2;
+    margin-left: 45%;
+    margin-top: 100px;
+    height: 50px;
+}
+
+#logo_titre_social_insta{
+    margin-left: 60%;
+}
+
+#instagram{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#instafeed{
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+    align-items: center;
+}
+
+#instafeed img{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    width: 20%;
+}
+
+h2{
+    text-align: center;
+}
+
+#lien_insta{
+    font-size: x-large;
+    height : 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.logo_rs{
+    height: 50px;
+    margin-left: 24%;
+    margin-right: 2%;
+}
+
+.nom_rs{
+    font-size: 40px;
+    font-family: 'Open Sans';
+    color:#171f6b;
+}
+
+#fond_classement{
+    border-radius: 3% 3% 0% 0%;
+}
+
+.titre_classement{
+    font-family: 'Montserrat Classic', sans-serif;
+    color: #171f6b                                            
+}
+
+.titre_actualite{
+    font-family: 'Archivo Black', sans-serif;
+    color:#171f6b                        
+}
+
